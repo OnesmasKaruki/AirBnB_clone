@@ -151,6 +151,7 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     obj.__dict__[k] = v
         storage.save()
+
     def parse(self, args):
         """Usage: Parsing"""
         new_list = []
@@ -168,6 +169,7 @@ class HBNBCommand(cmd.Cmd):
         new_str = args[1][args[1].find('(')+1:args[1].find(')')]
         new_list.append(" ".join(new_str.split(", ")))
         return " ".join(i for i in new_list)
+
     def do_count(self, args):
         """Usage: Counting"""
         counter = 0
@@ -181,6 +183,7 @@ class HBNBCommand(cmd.Cmd):
             if name[0] == args[0]:
                 counter += 1
             print(counter)
+
     def default(self, args):
         """Usage: Default"""
         sargs = args.split('.')
