@@ -172,7 +172,9 @@ class HBNBCommand(cmd.Cmd):
         return " ".join(i for i in new_list)
 
     def do_count(self, args):
-        """Usage: Counting"""
+        """Usage: count <class name>.count().
+        Update your command interpreter (console.py) to retrieve the number of instances of a class
+        """
         counter = 0
         args = split(args, " ")
         if args[0] not in HBNBCommand.__myClasses:
