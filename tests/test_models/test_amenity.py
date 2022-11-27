@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """Testing Amenity"""
 from models.amenity import Amenity
 import unittest
