@@ -9,6 +9,7 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 import shlex
+from shlex import split
 from models.user import User
 
 
